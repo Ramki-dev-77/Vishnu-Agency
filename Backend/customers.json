@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "key": 1,
+    "customer_name": "Ramkishore",
+    "village": "Avinangudi",
+    "Category": "Sun Direct",
+    "Amount": 100,
+    "Date": "13/7/2025"
+  },
+  {
+    "id": 2,
+    "key": 2,
+    "customer_name": "Vishmu",
+    "village": "Avinangudi",
+    "Category": "Airtel",
+    "Amount": 50
+  },
+  {
+    "id": 3,
+    "key": 3,
+    "customer_name": "Amudha",
+    "village": "Avinangudi",
+    "Category": "Current Bill",
+    "Amount": 20
+  }
+]
