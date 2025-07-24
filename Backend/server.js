@@ -51,15 +51,14 @@ app.delete("/api/delete",(req,res)=>{
     const datum = JSON.parse(readData);
     
     if(indexData.id === 0){
-        datum.splice(0,0);
+        datum.splice(0,1);
     }
     else{
-        datum.splice(indexData.id,indexData.id);
+        datum.splice(indexData.id,1);
     }
 
     fs.writeFileSync('customers.json',JSON.stringify(datum,null,2));
 
-    
     res.json({message:"Success"});
 
 });
@@ -69,9 +68,10 @@ app.get("/api/category",(req,res)=>{
     const jsonData = fs.readFileSync("customers.json",'utf-8');
     const datum = JSON.parse(jsonData);
 
-    console.log(datum)
+    console.log(datum);
     res.json()
-})
+});
+
 //To enable the port to listen to the server
 app.listen(port ,()=>{
     console.log(`Server is running in ${port} successfully!!`);
